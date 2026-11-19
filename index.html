@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Database Academy - منصة تعليمية تفاعلية لتعلم قواعد البيانات">
+  <title>Database Academy | تعلّم قواعد البيانات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#" aria-label="Database Academy">
+        <span class="brand-icon">▤</span>
+        <span class="brand-copy">
+          <strong>Database <em>Academy</em></strong>
+          <small>Learn <b>•</b> Practice <b>•</b> Excel</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a class="nav-link active" href="#">⌂ <span>الرئيسية</span></a>
+        <a class="nav-link" href="#theory">▤ <span>الجانب النظري</span></a>
+        <a class="nav-link" href="#practice">‹/› <span>الجانب العملي</span></a>
+        <a class="nav-link" href="#quiz">☷ <span>الاختبارات</span></a>
+        <a class="nav-link" href="#about">ⓘ <span>حول الموقع</span></a>
+      </nav>
+
+      <form class="search-box" role="search">
+        <input type="search" placeholder="ابحث في الموقع..." aria-label="ابحث في الموقع">
+        <button type="submit" aria-label="بحث">⌕</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow"><span>✦</span> منصة تعليمية تفاعلية</span>
+          <h1>تعلّم <span>قواعد البيانات</span></h1>
+          <h2>Database Systems</h2>
+          <p>
+            منصة تعليمية شاملة لشرح مفاهيم قواعد البيانات،
+            مع أمثلة عملية وتمارين تفاعلية لمساعدتك على الفهم والتطبيق.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#courses">استكشاف الدروس <span>▶</span></a>
+            <a class="button button-outline" href="#about">معرفة المزيد <span>▤</span></a>
+          </div>
+          <div class="hero-meta">
+            <span>✓ محتوى جامعي منظم</span>
+            <span>✓ أمثلة تطبيقية</span>
+            <span>✓ تعلّم خطوة بخطوة</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="رسم توضيحي لقاعدة بيانات">
+          <div class="code-window">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <code><span>SELECT</span> *<br><span>FROM</span> students<br><span>WHERE</span> age &gt; 18;</code>
+            <div class="mini-tables">
+              <div>id&nbsp;&nbsp; name</div><div>age&nbsp; city</div><div>course</div>
+            </div>
+          </div>
+          <div class="database-art">
+            <div class="db-ring ring-one"></div>
+            <div class="db-ring ring-two"></div>
+            <div class="db-cylinder"><i></i><i></i><i></i><i></i></div>
+            <span class="db-spark spark-one">✦</span>
+            <span class="db-spark spark-two">✧</span>
+          </div>
+          <div class="hero-caption">DATA <b>•</b> STRUCTURE <b>•</b> KNOWLEDGE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-section container" id="courses">
+      <div class="section-heading">
+        <span></span>
+        <div>
+          <h2>الوحدات التعليمية</h2>
+          <p>رحلة متكاملة من الأساسيات إلى التطبيقات المتقدمة</p>
+        </div>
+        <span></span>
+      </div>
+
+      <div class="course-grid">
+        <article class="course-card card-blue" id="theory">
+          <div class="course-icon">ℹ</div>
+          <div class="course-content">
+            <small>الوحدة الأولى</small>
+            <h3>مقدمة في قواعد البيانات</h3>
+            <ul>
+              <li>ما هي قواعد البيانات؟</li>
+              <li>أهمية قواعد البيانات</li>
+              <li>أنواع قواعد البيانات</li>
+            </ul>
+            <a href="#about" class="course-link">دخول الوحدة <b>←</b></a>
+          </div>
+        </article>
+
+        <article class="course-card card-gold">
+          <div class="course-icon">▤</div>
+          <div class="course-content">
+            <small>الوحدة الثانية</small>
+            <h3>النموذج العلائقي</h3>
+            <ul>
+              <li>الجداول والعلاقات</li>
+              <li>المفاتيح والقيود</li>
+              <li>العلاقات بين الجداول</li>
+            </ul>
+            <a href="#about" class="course-link">دخول الوحدة <b>←</b></a>
+          </div>
+        </article>
+
+        <article class="course-card card-purple" id="practice">
+          <div class="course-icon">SQL</div>
+          <div class="course-content">
+            <small>الوحدة الثالثة</small>
+            <h3>لغة SQL</h3>
+            <ul>
+              <li>أوامر SQL الأساسية</li>
+              <li>الاستعلامات المتقدمة</li>
+              <li>العمليات على البيانات</li>
+            </ul>
+            <a href="#about" class="course-link">دخول الوحدة <b>←</b></a>
+          </div>
+        </article>
+
+        <article class="course-card card-green">
+          <div class="course-icon">⚙</div>
+          <div class="course-content">
+            <small>الوحدة الرابعة</small>
+            <h3>التصميم والتطبيع</h3>
+            <ul>
+              <li>مخططات ER</li>
+              <li>التطبيع Normalization</li>
+              <li>أشكال التطبيع</li>
+            </ul>
+            <a href="#about" class="course-link">دخول الوحدة <b>←</b></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features container" id="quiz">
+      <div class="feature">
+        <span class="feature-icon cyan">⚡</span>
+        <div><strong>تعلّم بتفاعلية</strong><small>وبشكل مبسّط</small></div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon yellow">▣</span>
+        <div><strong>أمثلة عملية</strong><small>مع أكواد قابلة للنسخ</small></div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon blue">🏆</span>
+        <div><strong>اختبارات تفاعلية</strong><small>لتقييم مستواك</small></div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon purple">◉</span>
+        <div><strong>دعم مستمر</strong><small>للمساعدة والاستفسار</small></div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about">
+      <div>
+        <span class="section-kicker">عن المنصة</span>
+        <h2>ابدأ رحلتك في عالم البيانات</h2>
+        <p>تهدف Database Academy إلى تقديم محتوى أكاديمي واضح يجمع بين الشرح النظري والتطبيق العملي، لمساعدة طلاب الهندسة المعلوماتية على اكتساب أساس قوي في تصميم قواعد البيانات والتعامل معها.</p>
+      </div>
+      <div class="about-stat"><strong>04</strong><span>وحدات تعليمية</span></div>
+      <div class="about-stat"><strong>∞</strong><span>فرص للتعلّم والتطبيق</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Database Academy</span>
+      <span>منصة تعليمية جامعية | جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+</body>
+</html>
