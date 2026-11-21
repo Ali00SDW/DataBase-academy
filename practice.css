@@ -1,0 +1,13 @@
+/* Practice page styles */
+.sql-block { direction: ltr; text-align: left; overflow: auto; padding: 20px; border-radius: 13px; background: #010916; border: 1px solid #174b72; color: #d8efff; font: 14px/1.9 Consolas,monospace; }
+.sql-block .kw { color: #24d8f1; }
+.sql-block .str { color: #b5e58c; }
+.sql-block .comment { color: #7894ad; }
+.table-wrap { overflow-x: auto; margin-top: 14px; }
+.data-table { width: 100%; border-collapse: collapse; min-width: 440px; text-align: right; }
+.data-table th,.data-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.data-table th { color: #5ce4f4; background: rgba(8,201,245,.07); }
+.data-table td { color: #c6d5e5; }
+.exercise { margin-top: 18px; padding: 20px; border: 1px solid rgba(22,140,255,.32); border-radius: 14px; background: rgba(8,29,55,.72); }
+.exercise h3 { margin: 0 0 8px; }
+.exercise p { color: #b7c9dc; line-height: 1.8; }

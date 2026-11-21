@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="طبّق مفاهيم قواعد البيانات من خلال أمثلة SQL متدرجة وجداول توضيحية وتمارين عملية."
+    />
+    <title>الجانب العملي | Database Academy</title>
+    <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="practice.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="index.html"
+          ><span class="brand-icon">▤</span
+          ><span class="brand-copy"
+            ><strong>Database <em>Academy</em></strong
+            ><small>Learn <b>•</b> Practice <b>•</b> Excel</small></span
+          ></a
+        >
+        <nav class="main-nav" aria-label="القائمة الرئيسية">
+          <a class="nav-link" href="index.html">⌂ <span>الرئيسية</span></a
+          ><a class="nav-link" href="theory.html"
+            >▤ <span>الجانب النظري</span></a
+          ><a class="nav-link active" href="practice.html"
+            >‹/› <span>الجانب العملي</span></a
+          ><a class="nav-link" href="quiz.html">☷ <span>الاختبارات</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">الرئيسية</a> / الجانب العملي
+          </div>
+          <span class="page-kicker">✦ DATABASE ACADEMY</span>
+          <h1>الجانب العملي</h1>
+          <p>
+            طبّق مفاهيم قواعد البيانات من خلال أمثلة SQL متدرجة وجداول توضيحية
+            وتمارين عملية.
+          </p>
+        </div>
+      </section>
+      <section class="container page-content">
+        <div class="section-heading">
+          <span></span>
+          <div>
+            <h2>مختبر SQL العملي</h2>
+            <p>شاهد المثال، افهم الاستعلام، ثم جرّب كتابة استعلام مشابه</p>
+          </div>
+          <span></span>
+        </div>
+        <div class="content-grid">
+          <article class="content-card">
+            <h2>1. إنشاء جدول الطلاب</h2>
+            <p>
+              نبدأ بإنشاء جدول لتخزين بيانات الطلاب، مع تحديد نوع كل عمود
+              والمفتاح الأساسي.
+            </p>
+            <pre
+              class="sql-block"
+            ><span class="kw">CREATE TABLE</span> students (<br>  id <span class="kw">INT PRIMARY KEY</span>,<br>  name <span class="kw">VARCHAR</span>(100),<br>  age <span class="kw">INT</span>,<br>  city <span class="kw">VARCHAR</span>(50)<br>);</pre>
+          </article>
+          <article class="content-card">
+            <h2>2. إدخال بيانات</h2>
+            <p>نستخدم INSERT لإضافة سجل جديد إلى الجدول.</p>
+            <pre
+              class="sql-block"
+            ><span class="kw">INSERT INTO</span> students<br>(id, name, age, city)<br><span class="kw">VALUES</span><br>(1, <span class="str">'أحمد'</span>, 21, <span class="str">'دمشق'</span>);</pre>
+          </article>
+          <article class="content-card">
+            <h2>3. استرجاع البيانات</h2>
+            <p>يعرض الاستعلام التالي الطلاب الذين تزيد أعمارهم عن 18 عاماً.</p>
+            <pre
+              class="sql-block"
+            ><span class="kw">SELECT</span> *<br><span class="kw">FROM</span> students<br><span class="kw">WHERE</span> age &gt; 18;</pre>
+            <div class="callout">
+              النجمة <b>*</b> تعني اختيار جميع الأعمدة. أما WHERE فتحدد الشرط
+              الذي يجب أن يحققه السجل.
+            </div>
+          </article>
+          <article class="content-card">
+            <h2>4. شكل البيانات</h2>
+            <p>مثال توضيحي على سجلات جدول الطلاب بعد إدخال بعض البيانات.</p>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>city</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>أحمد</td>
+                    <td>21</td>
+                    <td>دمشق</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>سارة</td>
+                    <td>19</td>
+                    <td>حلب</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>ليان</td>
+                    <td>17</td>
+                    <td>حمص</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+        <div class="exercise">
+          <h3>✦ جرّب بنفسك</h3>
+          <p>
+            اكتب استعلام SQL يعرض أسماء الطلاب وأعمارهم فقط، للطلاب الذين
+            أعمارهم 20 سنة أو أكثر.
+          </p>
+          <pre
+            class="sql-block"
+          ><span class="comment">-- اكتب حلك هنا</span><br><span class="kw">SELECT</span> ______, ______<br><span class="kw">FROM</span> students<br><span class="kw">WHERE</span> ______;</pre>
+          <p class="small-note">
+            هذا المختبر يعرض أمثلة تعليمية ثابتة. تشغيل الاستعلامات فعلياً يتطلب
+            ربط الموقع لاحقاً بقاعدة بيانات أو بيئة SQL.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Database Academy</span
+        ><span>منصة تعليمية جامعية | جميع الحقوق محفوظة</span>
+      </div>
+    </footer>
+  </body>
+</html>
