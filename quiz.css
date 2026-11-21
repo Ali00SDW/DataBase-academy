@@ -39,11 +39,3 @@
 .quiz-options input {
   accent-color: #08c9f5;
 }
-@media (max-width: 760px) {
-  .quiz-options {
-    grid-template-columns: 1fr;
-  }
-  .quiz-question {
-    padding: 18px;
-  }
-}
